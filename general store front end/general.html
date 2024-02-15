@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>general stores</title>
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+    <div class="form-body">
+        <header class="main-header">
+            <h1 class="main-title">My General Stores</h1>
+            <h2 class="sub-title">All in one general store</h2>
+        </header>
+        <form onsubmit="additemfromhandler(event)">
+            <label > Item Name:</label>
+            <input type="text"  id="itemname" placeholder="eg.rice" required>
+            <label > Description:</label>
+            <input type="text"  id="description" placeholder="eg.cooking items" required>
+            <label > Price:</label>
+            <input type="number"  id="price" placeholder="eg.40 Rs" required>
+            <label > Quantity:</label>
+            <input type="number"  id="quantity" placeholder="eg.5 kg">
+            <button type="submit">Add Items</button>
+        </form>
+        <ul id="listofitems"></ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>  
+    <script src="./app.js">
+        
+
+    </script>
+    
+</body>
+</html>
